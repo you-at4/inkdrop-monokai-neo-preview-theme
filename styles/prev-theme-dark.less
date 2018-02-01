@@ -89,13 +89,9 @@ body[class*="dark-ui"] {
   }
 
   .mde-preview {
-    @import (reference) 'code-block-theme';
-    pre {
-      .CodeMirror !important;
+      @import 'code-block-theme';
       ::selection {
-        .CodeMirror-selected;
-        color: unset !important;
-      }
+        color: unset ;
     }
   }
 }

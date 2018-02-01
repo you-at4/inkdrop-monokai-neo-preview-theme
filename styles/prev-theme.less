@@ -566,12 +566,9 @@
 }
 
 .mde-preview {
-  @import (reference) 'code-block-theme';
-  pre {
-    .CodeMirror !important;
-    ::selection {
-      .CodeMirror-selected;
-      color: unset !important;
-    }
+  @import 'code-block-theme' ;
+  ::selection {
+    color: unset ;
   }
 }
+

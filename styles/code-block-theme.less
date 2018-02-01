@@ -1,74 +1,59 @@
 @import (reference) "syntax-variables.less";
 
-/* Based on Sublime Text's Monokai theme */
+pre {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+  ::selection {background: @syntax-wrap-guide-color; }
 
+  .CodeMirror-gutters {
+    background: @syntax-gutter-background-color;
+    border-right: 0px;
+  }
+  .CodeMirror-guttermarker { color: white; }
+  .CodeMirror-guttermarker-subtle,
+  .CodeMirror-linenumber { color: @syntax-linenumber-color; }
+  .CodeMirror-cursor { border-left: 1px solid @syntax-cursor-color; }
 
-.CodeMirror {
-    background-color: @syntax-background-color !important;
-    color: @syntax-text-color;
+  >code>span {
+    &.cm-comment {color: @syntax-comment;}
+    &.cm-keyword {color: @syntax-keyword;}
+
+    &.cm-atom {color: @syntax-atom;}
+    &.cm-number {color: @syntax-number;}
+
+    &.cm-property {color: @syntax-property;}
+    &.cm-attribute {color: @syntax-attribute;}
+    &.cm-builtin {color: @syntax-builtin;}
+    &.cm-string {color: @syntax-string;}
+
+    &.cm-variable {color: @syntax-variable;}
+    &.cm-variable-2 {color: @syntax-variable-2;}
+    &.cm-variable-3 {color: @syntax-variable-3;}
+    &.cm-type { color: @syntax-type; }
+    &.cm-def {color: @syntax-def;}
+    &.cm-bracket {color: @syntax-bracket;}
+    &.cm-tag {color: @syntax-tag;}
+    &.cm-header {color: @syntax-header;}
+    &.cm-link {color: @syntax-link;}
+
+    &.cm-error { background: @syntax-error-background; color: @syntax-error; }
+
+    &.cm-quote {color: @syntax-quote;}
+    &.cm-operator {color: @syntax-operator;}
+    &.cm-punctuation {color: @syntax-punctuation;}
+    &.cm-string-2 {color: @syntax-string-2;}
+    &.cm-meta {color: @syntax-meta;}
+    &.cm-qualifier {color: @syntax-qualifier;}
+    &.cm-hr {color: @syntax-hr;}
+    &.cm-s-default{color: @syntax-default;}
+    &.cm-rangeinfo {color: @syntax-rangeinfo;}
+    &.cm-minus {color: @syntax-minus;}
+    &.cm-plus {color: @syntax-plus;}
+  }
+
+  .CodeMirror-activeline-background { background: @syntax-activeline-background-color; }
+  .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+  }
 }
-.CodeMirror-selected { background: @syntax-wrap-guide-color; }
-// .CodeMirror-line::selection,  .CodeMirror-line > span::selection,  .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
-// .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
-
-.CodeMirror-gutters {
-  background: @syntax-gutter-background-color;
-  border-right: 0px;
-}
-.CodeMirror-guttermarker { color: white; }
-.CodeMirror-guttermarker-subtle,
-.CodeMirror-linenumber { color: @syntax-linenumber-color; }
-.CodeMirror-cursor { border-left: 1px solid @syntax-cursor-color; }
-
-.inline span {
-  &.cm-comment {color: @syntax-comment;}
-  &.cm-keyword {color: @syntax-keyword;}
-
-  &.cm-atom {color: @syntax-atom;}
-  &.cm-number {color: @syntax-number;}
-
-  &.cm-property {color: @syntax-property;}
-  &.cm-attribute {color: @syntax-attribute;}
-  &.cm-builtin {color: @syntax-builtin;}
-  &.cm-string {color: @syntax-string;}
-
-  &.cm-variable {color: @syntax-variable;}
-  &.cm-variable-2 {color: @syntax-variable-2;}
-  &.cm-variable-3 {color: @syntax-variable-3;}
-
-  &.cm-type { color: @cyan; }
-
-  &.cm-def {color: @syntax-def;}
-  &.cm-bracket {color: @syntax-bracket;}
-  &.cm-tag {color: @syntax-tag;}
-  &.cm-header {color: @syntax-header;}
-  &.cm-link {color: @syntax-link;}
-
-  &.cm-error { background: @syntax-error-background; color: @syntax-error; }
-
-  &.cm-quote {color: @syntax-quote;}
-  &.cm-operator {color: @syntax-operator;}
-  
-  &.cm-punctuation {color: @blue;}
-
-  &.cm-string-2 {color: @syntax-string-2;}
-  &.cm-meta {color: @syntax-meta;}
-  &.cm-qualifier {color: @syntax-qualifier;}
-  &.cm-hr {color: @syntax-hr;}
-
-  &.cm-s-default{color: @syntax-default;}
-  &.cm-rangeinfo {color: @syntax-rangeinfo;}
-  &.cm-minus {color: @syntax-minus;}
-  &.cm-plus {color: @syntax-plus;}
-}
-
-.CodeMirror-activeline-background { background: @syntax-activeline-background-color; }
-.CodeMirror-matchingbracket {
-  text-decoration: underline;
-  color: white !important;
-}
-
-
-  
-  
-  
