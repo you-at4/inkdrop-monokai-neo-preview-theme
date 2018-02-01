@@ -1,0 +1,15 @@
+{
+  "name": "monokai-neo-codeblock-prev-theme",
+  "description": "Github preview theme and monokai neo code block theme for Inkdrop Markdown Editor",
+  "version": "0.1.0",
+  "theme": "preview",
+  "repository": "",
+  "license": "MIT",
+  "styleSheets": [
+    "prev-theme.less",
+    "prev-theme-dark.less"
+  ],
+  "engines": {
+    "inkdrop": ">=3.12.0"
+  }
+}

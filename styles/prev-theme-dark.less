@@ -1,0 +1,101 @@
+body[class*="dark-ui"] {
+
+  .mde-preview {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .mde-preview {
+    a {
+      background-color: transparent;
+    }
+
+    img {
+      border: 0;
+    }
+
+    input {
+      color: inherit;
+    }
+
+    a {
+      color: #6987AF;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: rgba(255, 255, 255, 0.875);
+    }
+
+    h6 {
+      color: rgba(255, 255, 255, 0.625);
+    }
+
+    h1,
+    h2 {
+      border-bottom-color: rgba(255, 255, 255, 0.4);
+    }
+
+    hr {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    blockquote {
+      color: rgba(255, 255, 255, 0.4);
+      border-left: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    table th {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    table th,
+    table td {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    table tr {
+      background-color: transparent;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    table tr:nth-child(2n) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    img {
+      background-color: transparent;
+    }
+
+    .highlight pre,
+    pre {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .cm-quote {font-style: italic;}
+    .cm-header, .cm-strong {font-weight: bold;}
+    .cm-em {font-style: italic;}
+    .cm-link {text-decoration: underline;}
+    .cm-strikethrough {text-decoration: line-through;}
+
+    .cm-keyword {font-weight: normal;}
+    .cm-variable,
+    .cm-punctuation {}
+    .cm-comment {font-style: italic;}
+
+  }
+
+  .mde-preview {
+    @import (reference) 'code-block-theme';
+    pre {
+      .CodeMirror !important;
+      ::selection {
+        .CodeMirror-selected;
+        color: unset !important;
+      }
+    }
+  }
+}
